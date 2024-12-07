@@ -4,7 +4,7 @@ function sumPair(arr, target) {
 
   for (const num of arr) {
     const complement = target - num;
-git 
+    
     if (numFreq.has(complement) && numFreq.get(complement) > 0) {
       result.push([Math.min(num, complement), Math.max(num, complement)]);
       numFreq.set(complement, numFreq.get(complement) - 1);
